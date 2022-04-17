@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import { Table } from "./Components/Tables/Table";
+// import { A } from "./Components/ContextEx/A";
+// import { Reducer } from "./Components/Reducer";
+// import { UserProvider } from "./Components/ContextEx/userContext";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      Hii
+      {/* <Reducer /> */}
+      {/* <UserProvider firstName="Antonio"> */}
+      {/* <A /> */}
+      {/* </UserProvider> */}
+      <Table />
     </div>
   );
 }
