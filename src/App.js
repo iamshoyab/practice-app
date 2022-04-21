@@ -1,9 +1,13 @@
+import { useState } from "react";
 import "./App.css";
-import { Table } from "./Components/Tables/Table";
+import { Button } from "react-bootstrap";
+import Page2 from "./Components/Page2";
+// import { Table } from "./Components/Tables/Table";
 // import { A } from "./Components/ContextEx/A";
 // import { Reducer } from "./Components/Reducer";
 // import { UserProvider } from "./Components/ContextEx/userContext";
 function App() {
+  const [show, setShow] = useState(false);
   return (
     <div className="App">
       Hii
@@ -11,7 +15,9 @@ function App() {
       {/* <UserProvider firstName="Antonio"> */}
       {/* <A /> */}
       {/* </UserProvider> */}
-      <Table />
+      <Button onClick={() => setShow(!show)}>Modal</Button>
+      {show && <Page2 show={show} />}
+      {/* <Table /> */}
     </div>
   );
 }
